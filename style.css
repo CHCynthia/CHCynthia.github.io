@@ -7,7 +7,7 @@ body {
 }
 
 .centered-image {
-  margin: 20px 0;
+  margin: 2px;
   width: 1200px;
   max-width: 100%;
   height: auto;
@@ -21,7 +21,7 @@ body {
 
 #coin {
   position: absolute;
-  top: 50px;
-  left: 500px;
+  top: 40px;
+  left: 600px;
   transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
 }

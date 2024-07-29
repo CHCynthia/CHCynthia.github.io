@@ -7,14 +7,14 @@ window.addEventListener('scroll', function() {
         const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
         // Check if p5.JPG is partially in view
-        if (rect.top < windowHeight && rect.bottom >= 0) {
+        if (rect.top < (windowHeight-10) && rect.bottom >= 0) {
             const visiblePart = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
             const visibleRatio = visiblePart / rect.height;
 
             // Calculate translate and scale values based on visibility ratio
-            const translateY = 800 * visibleRatio; // Maximum translateY value
-            const translateX = -50 * visibleRatio; // Maximum translateX value (left)
-            const scale = 0.8 - (0.2 * visibleRatio); // Scale from 1 to 0.5
+            const translateY = 780 * visibleRatio; // Maximum translateY value
+            const translateX = -150 * visibleRatio; // Maximum translateX value (left)
+            const scale = 1 - (0.4 * visibleRatio); // Scale from 1 to 0.5
 
             coinImage.style.transform = `translate(${translateX}px, ${translateY}px)`;
             coinImage.style.width = `${300 * scale}px`;
