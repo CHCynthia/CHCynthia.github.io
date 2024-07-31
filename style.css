@@ -1,5 +1,5 @@
-$("#flipbook_IDname").turn({
-  width: 400,
-  height: 300,
-  autoCenter: true
-});
+#book {
+  width: 1160px;
+  height: 780px;
+  margin: auto;
+}
