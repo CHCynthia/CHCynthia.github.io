@@ -1,47 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="turn.min.js"></script>
 </head>
 <body>
-    <img src="p1.GIF" width="1200px" alt="Description of the first image" class="centered-image" />
-    <img src="P2.GIF" width="1200px" alt="Description of the second image" class="centered-image" />
-    <img src="p3.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P4.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <div id="parallax-container">
-        <img src="p5.JPG" width="1200px" alt="Test" class="centered-image"/>
-        <img src="coin.PNG" width="300px" id="coin"/>
-    </div>
-    <img src="p6.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p7.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p8.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p9.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p10.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P11.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P12.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P13.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P14.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p15.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P16.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P17.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P18.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P19.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P20.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P21.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P22.jpg" width="1200px" alt="Description of the second image" class="centered-image" />
-    <img src="P23.jpg" width="1200px" alt="Description of the second image" class="centered-image" />
-    <img src="P24.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P25.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P26.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P27.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p28.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p29.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P30.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="P31.jpg" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p32.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p33.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p34.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <img src="p35.JPG" width="1200px" alt="Description of the third image" class="centered-image" />
-    <script src="script.js"></script>
+    <div id="flipbook_IDname">
+        <div class="hard"> Turn.js </div>
+        <div class="hard"></div>
+        <div> Page 1 </div>
+        <div> Page 2 </div>
+        <div> Page 3 </div>
+        <div> Page 4 </div>
+        <div class="hard"></div>
+       </div>
+       <script>$("#flipbook_IDname").turn({
+        width: 400,
+        height: 300,
+        autoCenter: true
+      });
+      </script>
 </body>
 </html>

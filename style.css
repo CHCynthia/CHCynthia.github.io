@@ -1,27 +1,5 @@
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.centered-image {
-  margin: 2px;
-  width: 1200px;
-  max-width: 100%;
-  height: auto;
-}
-
-#parallax-container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-}
-
-#coin {
-  position: absolute;
-  top: 40px;
-  left: 600px;
-  transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
-}
+$("#flipbook_IDname").turn({
+  width: 400,
+  height: 300,
+  autoCenter: true
+});
