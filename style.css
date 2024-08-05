@@ -2,8 +2,18 @@
   width: 1400px;
   height: 800px;
   margin: auto;
-  overflow: auto;
+  overflow: hidden; /* 使用 hidden 以避免滾動條 */
   position: relative;
-  transform: scale(0.5);
-  transform-origin: top center; 
+  /* transform: scale(0.5); 這行可根據需要添加 */
+  /* transform-origin: top center; 這行可根據需要添加 */
+}
+
+.container {
+  text-align: center; /* 中心對齊容器內容 */
+}
+
+.btn-prev, .btn-next {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
 }
