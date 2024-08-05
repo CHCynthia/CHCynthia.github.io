@@ -19,3 +19,17 @@ for (let i = 1; i <= 35; i++) {
 }
 pageFlip.loadFromImages(images);
 
+document.querySelector(".page-total").innerText = pageFlip.getPageCount();
+    document.querySelector(
+        ".page-orientation"
+    ).innerText = pageFlip.getOrientation();
+
+    document.querySelector(".btn-prev").addEventListener("click", () => {
+        pageFlip.flipPrev(); // Turn to the previous page (with animation)
+    });
+
+    document.querySelector(".btn-next").addEventListener("click", () => {
+        pageFlip.flipNext(); // Turn to the next page (with animation)
+    });
+
+
