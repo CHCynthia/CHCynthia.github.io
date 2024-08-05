@@ -15,7 +15,7 @@ const pageFlip = new St.PageFlip(bookElement, {
 const images = [];
 for (let i = 1; i <= 5; i++) {
     const pageNum = i.toString().padStart(2, '0'); // 將數字轉為兩位數的字符串
-    images.push(`path/to/images/${pageNum}.jpg`);
+    images.push(`images/${pageNum}.jpg`);
 }
 
 pageFlip.loadFromImages(images);
