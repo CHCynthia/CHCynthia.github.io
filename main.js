@@ -11,6 +11,7 @@ const pageFlip = new St.PageFlip(bookElement, {
     mobileScrollSupport: false,
 });
 
+const images = [];
 for (let i = 1; i <= 35; i++) {
     const pageNum = i.toString().padStart(2, '0');
     images.push(`images/${pageNum}.jpg`);
