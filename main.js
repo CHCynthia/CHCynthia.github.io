@@ -1,33 +1,37 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // 初始化翻頁效果
-    const book = St.PageFlip.getInstanceById('demoBookExample');
+const bookElement = document.getElementById('book');
 
-    // 上一頁按鈕事件
-    document.querySelector('.btn-prev').addEventListener('click', function() {
-        if (book) {
-            book.flipPrev(); // 翻到上一頁
-            updatePageInfo(); // 更新頁面資訊
-        }
+const pageFlip = new St.PageFlip(bookElement, {
+    width: 1200, // Adjusted to 50% of original width
+    height: 800, // Adjusted to 50% of original height
+    size: "fixed",
+    showCover: true,
+    usePortrait: true,
+    singlePage: true,
+    autoSize: true,
+    mobileScrollSupport: false,
+});
+
+for (let i = 1; i <= 35; i++) {
+    const pageNum = i.toString().padStart(2, '0');
+    images.push(`images/${pageNum}.jpg`);
+}
+pageFlip.loadFromImages(images);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const book = document.getElementById('book');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+
+    // 假設你的 page-flip 物件名稱是 pageFlip
+    const pageFlip = new PageFlip(book, {
+        // 配置你的 pageFlip 選項
     });
 
-    // 下一頁按鈕事件
-    document.querySelector('.btn-next').addEventListener('click', function() {
-        if (book) {
-            book.flipNext(); // 翻到下一頁
-            updatePageInfo(); // 更新頁面資訊
-        }
+    prevButton.addEventListener('click', () => {
+        pageFlip.flipPrev(); // 或者你需要使用的方法名稱
     });
 
-    // 更新頁面資訊
-    function updatePageInfo() {
-        if (book) {
-            document.querySelector('.page-current').textContent = book.getCurrentPage();
-            document.querySelector('.page-total').textContent = book.getTotalPages();
-            document.querySelector('.page-state').textContent = book.getState(); // 假設有這個方法
-            document.querySelector('.page-orientation').textContent = book.getOrientation(); // 假設有這個方法
-        }
-    }
-
-    // 初始化時更新頁面資訊
-    updatePageInfo();
+    nextButton.addEventListener('click', () => {
+        pageFlip.flipNext(); // 或者你需要使用的方法名稱
+    });
 });

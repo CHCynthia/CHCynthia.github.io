@@ -1,33 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小兔瑞比想要買玩具火車</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <div>
-        <button type="button" class="btn-prev">Previous page</button>
-        [<span class="page-current">1</span> of <span class="page-total">-</span>]
-        <button type="button" class="btn-next">Next page</button>
-    </div>
-    
-    <div>
-        State: <i class="page-state">read</i>, orientation: <i class="page-orientation">landscape</i>
-    </div>
-
-    <div class="container">
-        <div class="flip-book" id="demoBookExample">
-            <div class="page page-cover page-cover-top" data-density="hard">
-                <div class="page-content">
-                    <h2>BOOK TITLE</h2>
-                </div>
-            </div>
-            <div class="page">
-                <div class="page-content">
-                    <h2 class="page-header">Page header 1</h2>
-                    <div class="page-image" style="background-image: url(images/html/1.jpg)"></div>
-                    <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
-                    <div class="page-footer">2</div>
-                </div>
-            </div>
-            <!-- Additional pages go here -->
-        </div>
-    </div>
-
+    <div id="book"></div>
+    <button id="prev">上一頁</button>
+    <button id="next">下一頁</button>
     <script src="page-flip.browser.js"></script>
     <script src="main.js"></script>
 </body>
+</html>
