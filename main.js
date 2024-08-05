@@ -1,8 +1,8 @@
 const bookElement = document.getElementById('book');
 
 const pageFlip = new St.PageFlip(bookElement, {
-    width: 1200, // Adjusted to 50% of original width
-    height: 800, // Adjusted to 50% of original height
+    width: 2400, // Adjusted to 50% of original width
+    height: 1600, // Adjusted to 50% of original height
     size: "fixed",
     showCover: true,
     usePortrait: true,
