@@ -1,8 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const bookElement = document.getElementById('book');
 
+    // 檢查 PageFlip 庫是否加載
+    if (!St || !St.PageFlip) {
+        console.error('PageFlip library is not loaded');
+        return;
+    }
+
     const pageFlip = new St.PageFlip(bookElement, {
-        width: 1200,
+        width: 1400,
         height: 800,
         size: "fixed",
         showCover: true,
@@ -20,8 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     pageFlip.loadFromImages(images).then(() => {
-        document.querySelector(".page-total").innerText = pageFlip.getPageCount();
-        document.querySelector(".page-current").innerText = pageFlip.getCurrentPage(); // 設置當前頁面
+        console.log('Images loaded successfully');
+        const pageCount = pageFlip.getPageCount();
+        console.log('Total pages:', pageCount);
+
+        if (pageCount > 0) {
+            document.querySelector(".page-total").innerText = pageCount;
+            document.querySelector(".page-current").innerText = pageFlip.getCurrentPage() + 1; // 設置當前頁面
+        } else {
+            console.error('Page count is zero or not retrieved correctly');
+        }
 
         document.querySelector(".btn-prev").addEventListener("click", () => {
             pageFlip.flipPrev();
@@ -48,5 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 orientationElement.innerText = e.data;
             }
         });
+    }).catch(error => {
+        console.error('Error loading images:', error);
     });
 });
