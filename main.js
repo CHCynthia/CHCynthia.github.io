@@ -7,6 +7,8 @@ const pageFlip = new St.PageFlip(bookElement, {
     height: 1600, // 容器的高度
     size: 'fixed', // 固定大小
     showCover: true, // 顯示封面 
+    drawShadow: false,
+    maxShadowOpacity:0,
 });
 
 // 加載圖片
