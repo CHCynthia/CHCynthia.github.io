@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bookElement = document.getElementById('book');
 
     const pageFlip = new St.PageFlip(bookElement, {
-        width: 1400,
+        width: 1300,
         height: 800,
         size: "fixed",
         showCover: true,

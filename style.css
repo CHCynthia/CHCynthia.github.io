@@ -1,11 +1,11 @@
 #book {
-  width: 1400px;
+  width: 1300px;
   height: 800px;
   margin: auto;
-  overflow: hidden; /* 使用 hidden 以避免滾動條 */
+  overflow: hidden;
   position: relative;
-  /* transform: scale(0.5); 這行可根據需要添加 */
-  /* transform-origin: top center; 這行可根據需要添加 */
+  transform: scale(0.5);
+  transform-origin: top center;
 }
 
 .container {
