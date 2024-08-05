@@ -1,19 +1,9 @@
 #book {
-  width: 1200px;
-  height: 800px;
+  width: 1200px; /* 50% of 2400px */
+  height: 800px; /* 50% of 1600px */
   margin: auto;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
-  transform: scale(0.5);
-  transform-origin: top center;
-}
-
-.container {
-  text-align: center; /* 中心對齊容器內容 */
-}
-
-.btn-prev, .btn-next {
-  padding: 10px 20px;
-  margin: 5px;
-  font-size: 16px;
+  transform: scale(0.5); /* Scale down to 50% */
+  transform-origin: top left; /* Ensure the scaling starts from the top left corner */
 }
