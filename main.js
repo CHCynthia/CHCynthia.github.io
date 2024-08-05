@@ -1,12 +1,12 @@
 const bookElement = document.getElementById('book');
 
 const pageFlip = new St.PageFlip(bookElement, {
-    width: 2400, // Adjusted to 50% of original width
-    height: 1600, // Adjusted to 50% of original height
+    width: 1200,
+    height: 1600,
     size: "fixed",
     showCover: true,
     usePortrait: true,
-    singlePage: true,
+    singlePage: false,
     autoSize: true,
     mobileScrollSupport: false,
 });

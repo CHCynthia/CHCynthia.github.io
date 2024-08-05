@@ -1,9 +1,9 @@
 #book {
-  width: 960px; 
-  height: 640px; 
+  width: 1200px; 
+  height: 1600px; 
   margin: auto;
   overflow: auto;
   position: relative;
-  transform: scale(0.4); 
-  transform-origin: top left; 
+  
+  transform-origin: top center; 
 }
