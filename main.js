@@ -1,7 +1,7 @@
 const bookElement = document.getElementById('book');
 
 const pageFlip = new St.PageFlip(bookElement, {
-    width: 2400,
+    width: 2800,
     height: 1600,
     size: "fixed",
     showCover: true,
