@@ -3,9 +3,8 @@ const bookElement = document.getElementById('book');
 const pageFlip = new St.PageFlip(bookElement, {
     width: 1200,
     height: 1600,
-    size: "fixed",
+    size: "stretch",
     showCover: true,
-    usePortrait: true,
     singlePage: false,
     autoSize: true,
     mobileScrollSupport: false,
