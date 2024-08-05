@@ -16,22 +16,3 @@ for (let i = 1; i <= 35; i++) {
     images.push(`images/${pageNum}.jpg`);
 }
 pageFlip.loadFromImages(images);
-
-document.addEventListener('DOMContentLoaded', () => {
-    const book = document.getElementById('book');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-
-    // 假設你的 page-flip 物件名稱是 pageFlip
-    const pageFlip = new PageFlip(book, {
-        // 配置你的 pageFlip 選項
-    });
-
-    prevButton.addEventListener('click', () => {
-        pageFlip.flipPrev(); // 或者你需要使用的方法名稱
-    });
-
-    nextButton.addEventListener('click', () => {
-        pageFlip.flipNext(); // 或者你需要使用的方法名稱
-    });
-});
