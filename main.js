@@ -31,5 +31,17 @@ document.querySelector(".page-total").innerText = pageFlip.getPageCount();
     document.querySelector(".btn-next").addEventListener("click", () => {
         pageFlip.flipNext(); // Turn to the next page (with animation)
     });
+    pageFlip.on("flip", (e) => {
+        document.querySelector(".page-current").innerText = e.data + 1;
+    });
 
+    // triggered when the state of the book changes
+    pageFlip.on("changeState", (e) => {
+        document.querySelector(".page-state").innerText = e.data;
+    });
+
+    // triggered when page orientation changes
+    pageFlip.on("changeOrientation", (e) => {
+        document.querySelector(".page-orientation").innerText = e.data;
+    });
 
