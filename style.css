@@ -1,12 +1,12 @@
 body {
-  margin: 0;
+  margin: 0 px;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #book {
@@ -14,7 +14,7 @@ body {
   height: 45%; /* Adjust height as needed */
   display: flex;
   justify-content: top;
-  align-items: top;
+  align-items: center;
   position: relative;
   transform: scale(0.45);
   transform-origin: center;
