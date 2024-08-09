@@ -8,7 +8,7 @@ const pageFlip = new St.PageFlip(bookElement, {
     usePortrait: true,
     singlePage: true,
     autoSize: true,
-    mobileScrollSupport: false,
+    mobileScrollSupport: true,
 });
 
 const images = [];
