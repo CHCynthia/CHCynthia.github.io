@@ -5,7 +5,7 @@ const pageFlip = new St.PageFlip(bookElement, {
     height: 1600,
     size: "fixed",
     showCover: true,
-    usePortrait: true,
+    usePortrait:  true,
     singlePage: true,
     autoSize: true,
     mobileScrollSupport: true,

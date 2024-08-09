@@ -10,8 +10,8 @@ body {
 }
 
 #book {
-  width: 45%;
-  height: 45%; /* Adjust height as needed */
+  width: 90%;
+  height: 70vh; /* Adjust height as needed */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,4 +40,21 @@ button {
 
 button:hover {
   background-color: #6b360e;
+}
+
+@media (max-width: 768px) {
+  #book {
+    width: 100%; /* Full width for smaller screens */
+    height: 60vh; /* Adjust height for smaller screens */
+    transform: scale(0.25); /* Smaller scale for better fit on small screens */
+  }
+
+  .controls {
+    margin-top: -150px; /* Adjust the button position for smaller screens */
+  }
+
+  button {
+    padding: 8px 16px; /* Smaller button size for mobile */
+    font-size: 14px;
+  }
 }
